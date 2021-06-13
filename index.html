@@ -70,7 +70,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="menu-nav-link-sort blue">
+          <button data-modal-open type="button" class="menu-nav-link-sort blue">
             заказать услугу
           </button>
         </div>
@@ -120,6 +120,7 @@
           <ul class="items">
             <li class="items-of-mainsite">
               <img src="./images/activity1.jpg" alt="разработка" width="370" />
+              <h3 class="items-of-mainsite-title">Десктопные приложения</h3>
             </li>
             <li class="items-of-mainsite">
               <img
@@ -127,9 +128,11 @@
                 alt="тестирование"
                 width="370"
               />
+              <h3 class="items-of-mainsite-title">Мобильные приложения</h3>
             </li>
             <li class="items-of-mainsite">
               <img src="./images/activity3.jpg" alt="дизайн" width="370" />
+              <h3 class="items-of-mainsite-title">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -481,5 +484,20 @@
         </div>
       </div>
     </footer>
+    <!--Модалка-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="jump">
+          <svg class="icons-items">
+            <use
+              href="./images/icons.svg#icon-close "
+              width="1.25em"
+              height="1.25em"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
