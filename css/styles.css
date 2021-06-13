@@ -333,7 +333,7 @@ fill:currentColor;
   background:var(--bg-overlay-blue);
   z-index: 1;
 }
-.shadow-portfolio:hover .portfolio-submenu{
+.shadow-portfolio:hover .portfolio-submenu,.shadow-portfolio:focus .portfolio-submenu {
   opacity: 1;
   top: 0;
   transition: top 2000ms;
