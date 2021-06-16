@@ -316,6 +316,8 @@ fill:currentColor;
 .shadow-portfolio{
   position: relative;
   overflow: hidden;
+  transition: box-shadow 2000ms;
+  
 }
 .shadow-portfolio:hover,.shadow-portfolio:focus {
   
@@ -332,11 +334,16 @@ fill:currentColor;
   height: 294px;
   background:var(--bg-overlay-blue);
   z-index: 1;
+  
 }
 .shadow-portfolio:hover .portfolio-submenu,.shadow-portfolio:focus .portfolio-submenu {
   opacity: 1;
   top: 0;
   transition: top 2000ms;
+}
+.portfolio-submenu{
+  
+  transition: top 2000ms, opacity 5000ms;
 }
 .portfolio-text{
   display:flex;
@@ -744,4 +751,15 @@ border-radius: 0;
     top:0%;
     animation-timing-function:ease-out;
   }
+}
+
+
+
+.form{
+  display: block;
+  padding: 20px;
+  
+  color: #2196f3;
+  max-width: 200px;
+  
 }
