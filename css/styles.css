@@ -61,7 +61,8 @@ img{
 
 /*задаю плавный переход всем кнопкам , ссылкам и свг и при ховере тоже*/
 
-a,button,svg,:hover,:focus{
+a,:hover,:focus{
+  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), style 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -330,7 +331,7 @@ fill:currentColor;
   display: block;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 2000ms;
+  transition: box-shadow 250ms;
  
 }
 
@@ -683,14 +684,14 @@ height: 20px;
   height:100%;
 
  background-color: rgba(0, 0, 0, 0.2);
- transition: opacity 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+ transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .is-hidden{
   opacity: 0;
   visibility: 0;
   pointer-events: none;
-  transition: opacity 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .modal{
@@ -716,74 +717,30 @@ height: 20px;
   background-color:transparent;
   border: none;
   cursor: pointer;
-  animation:nev 3000ms backwards, ballbounce 3000ms 3000ms both;
+  animation: nev 3000ms;
 }
 
 
-/*Анимации для кнопки*/
+/*Анимация для кнопки*/
 
 @keyframes nev {
 0% {
-opacity: 0;
-border-radius: 50%;
-}
+opacity: 0;}
+
 20% {
 opacity: 0.2;
-width: 50px;
-height: 50px;
-border-radius: 140%;
+
 }
 
 50% {
 opacity: 0.5;
-width: 70px;
-height: 70px;
-border-radius: 110%;
+
+
 }
 
 100% {
 opacity: 1;
-width: 100%;
-height: 100%;
-border-radius: 0;
+
+
 }
-}
-@keyframes ballbounce {
-  /* up */
-  0% {
-    top:60%;
-    animation-timing-function: ease-in;
-  }
-  /* floor */
-  30% {
-    left:70%;
-    animation-timing-function: ease-out;
-  }
-  /* up */
-  40% {
-    top: 60%;
-  }
-  /* up */
-  45% {
-    right:37%;
-    animation-timing-function: ease-in;
-  }
-  /* floor */
-  60% {
-    top:10%;
-    animation-timing-function: ease-out;
-  }
-  /* up */
-  75% {
-    top:50%;
-  }
-  90% {
-    top:25%;
-    animation-timing-function: ease-in;
-  }
-  /* floor */
-  100% {
-    top:0%;
-    animation-timing-function:ease-out;
-  }
 }
